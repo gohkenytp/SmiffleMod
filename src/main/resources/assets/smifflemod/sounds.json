@@ -1,0 +1,21 @@
+{
+	"entity.shroomling.death": {
+		"sounds": [
+			"smifflemod:entity/shroomling/death"
+		],
+		"subtitle": "subtitles.entity.smifflemod.shroomling.death"
+	},
+	"entity.shroomling.hurt": {
+		"sounds": [
+			"smifflemod:entity/shroomling/hurt1",
+			"smifflemod:entity/shroomling/hurt2"
+		],
+		"subtitle": "subtitles.entity.smifflemod.shroomling.hurt"
+	},
+	"entity.shroomling.idle": {
+		"sounds": [
+			"smifflemod:entity/shroomling/idle"
+		],
+		"subtitle": "subtitles.entity.smifflemod.shroomling.idle"
+	}
+}

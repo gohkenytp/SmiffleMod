@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "smifflemod:bear_meat"
+  },
+  "result": "smifflemod:cooked_bear_meat",
+  "experience": 0.15,
+  "cookingtime": 100
+}

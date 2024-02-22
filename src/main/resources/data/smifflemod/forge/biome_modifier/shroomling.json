@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#smifflemod:shroomling_spawns",
+  "spawners": {
+    "type": "smifflemod:shroomling",
+    "maxCount": 3,
+    "minCount": 1,
+    "weight": 10
+  }
+}

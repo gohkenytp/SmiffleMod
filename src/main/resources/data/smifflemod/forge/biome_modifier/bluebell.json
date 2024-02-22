@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "minecraft:meadow",
+    "minecraft:sunflower_plains",
+    "minecraft:flower_forest",
+    "minecraft:taiga"
+  ],
+  "features": "smifflemod:bluebell_placed",
+  "step": "vegetal_decoration"
+}

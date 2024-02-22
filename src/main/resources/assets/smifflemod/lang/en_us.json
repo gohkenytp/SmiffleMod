@@ -1,0 +1,13 @@
+{
+  "block.smifflemod.bluebell": "Bluebell",
+  "block.smifflemod.potted_bluebell": "Potted Bluebell",
+
+  "entity.smifflemod.shroomling": "Shroomling",
+  "item.smifflemod.shroomling_spawn_egg": "Shroomling Spawn Egg",
+  "subtitles.entity.smifflemod.shroomling.death": "Shroomling dies",
+  "subtitles.entity.smifflemod.shroomling.hurt": "Shroomling hurts",
+  "subtitles.entity.smifflemod.shroomling.idle": "Shroomling squeaks",
+
+  "item.smifflemod.bear_meat": "Bear Meat",
+  "item.smifflemod.cooked_bear_meat": "Cooked Bear Meat"
+}
