@@ -1,9 +1,7 @@
 package smifflepuss.smifflemod.registry;
 
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -26,14 +24,14 @@ public class SmiffleModItems {
     @SubscribeEvent
     public static void registerCreativeTabsItem(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-            event.accept(SHROOMLING_SPAWN_EGG);
+            event.getEntries().putAfter(new ItemStack(Items.SHEEP_SPAWN_EGG), new ItemStack(SHROOMLING_SPAWN_EGG.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(SmiffleModBlocks.BLUEBELL);
+            event.getEntries().putAfter(new ItemStack(Items.LILY_OF_THE_VALLEY), new ItemStack(SmiffleModBlocks.BLUEBELL.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(BEAR_MEAT);
-            event.accept(COOKED_BEAR_MEAT);
+            event.getEntries().putAfter(new ItemStack(Items.COOKED_RABBIT), new ItemStack(BEAR_MEAT.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+            event.getEntries().putAfter(new ItemStack(BEAR_MEAT.get()), new ItemStack(COOKED_BEAR_MEAT.get()), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
         }
     }
 
