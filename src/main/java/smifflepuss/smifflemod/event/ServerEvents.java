@@ -23,15 +23,15 @@ public class ServerEvents {
     }
 
     @SubscribeEvent
-    public static void onEntityDeath(LivingDeathEvent event) {
-        Level world = event.getEntity().getCommandSenderWorld();
+    public static void onLivingDeathEvent(LivingDeathEvent event) {
+        Level world = event.getEntity().level();
         BlockPos pos = event.getEntity().blockPosition();
-        EntityType entity = event.getEntity().getType();
+        EntityType<?> entity = event.getEntity().getType();
         if ((SmiffleModConfig.ENABLE_POLAR_BEAR_MEAT.get() && entity.equals(EntityType.POLAR_BEAR))) {
             ItemEntity itemEntity = new ItemEntity(EntityType.ITEM, world);
             itemEntity.setPos(pos.getX() + 0.5D, pos.getY() + 0.2D, pos.getZ() + 0.5D);
             itemEntity.setItem(SmiffleModItems.BEAR_MEAT.get().getDefaultInstance());
-            event.getEntity().getCommandSenderWorld().addFreshEntity(itemEntity);
+            event.getEntity().level().addFreshEntity(itemEntity);
         }
     }
 }
