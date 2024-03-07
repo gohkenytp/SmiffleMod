@@ -10,6 +10,7 @@ import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.village.WandererTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import smifflepuss.smifflemod.SmiffleMod;
 import smifflepuss.smifflemod.config.SmiffleModConfig;
 import smifflepuss.smifflemod.registry.SmiffleModItems;
 
@@ -24,14 +25,20 @@ public class ServerEvents {
 
     @SubscribeEvent
     public static void onLivingDeathEvent(LivingDeathEvent event) {
-        Level world = event.getEntity().getCommandSenderWorld();
+        Level level = event.getEntity().getCommandSenderWorld();
         BlockPos pos = event.getEntity().blockPosition();
-        EntityType<?> entity = event.getEntity().getType();
-        if (SmiffleModConfig.ENABLE_POLAR_BEAR_MEAT.get() && entity.equals(EntityType.POLAR_BEAR)) {
-            ItemEntity itemEntity = new ItemEntity(EntityType.ITEM, world);
-            itemEntity.setPos(pos.getX() + 0.5D, pos.getY() + 0.2D, pos.getZ() + 0.5D);
-            itemEntity.setItem(SmiffleModItems.BEAR_MEAT.get().getDefaultInstance());
-            event.getEntity().getCommandSenderWorld().addFreshEntity(itemEntity);
+        try {
+            if (SmiffleModConfig.ENABLE_POLAR_BEAR_MEAT.get() && event.getEntity().getType() == EntityType.POLAR_BEAR) {
+                int i = event.getEntity().getCommandSenderWorld().getRandom().nextInt(2);
+                if (i == 1) {
+                    ItemEntity itemEntity = new ItemEntity(EntityType.ITEM, level);
+                    itemEntity.setPos(pos.getX() + 0.5D, pos.getY() + 0.2D, pos.getZ() + 0.5D);
+                    itemEntity.setItem(SmiffleModItems.BEAR_MEAT.get().getDefaultInstance());
+                    event.getEntity().getCommandSenderWorld().addFreshEntity(itemEntity);
+                }
+            }
+        } catch(Exception e){
+            SmiffleMod.LOGGER.warn("Tried to add unique behaviors to vanilla mobs when slain and encountered an error");
         }
     }
 }
