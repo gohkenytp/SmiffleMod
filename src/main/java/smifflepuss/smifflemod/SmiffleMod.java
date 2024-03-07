@@ -26,6 +26,7 @@ public class SmiffleMod
 {
     // Define mod id in a common place for everything to reference
     public static final String MODID = "smifflemod";
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public SmiffleMod() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
