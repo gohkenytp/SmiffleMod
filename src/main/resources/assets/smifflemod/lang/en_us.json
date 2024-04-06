@@ -7,6 +7,16 @@
   "subtitles.entity.smifflemod.shroomling.death": "Shroomling dies",
   "subtitles.entity.smifflemod.shroomling.hurt": "Shroomling hurts",
   "subtitles.entity.smifflemod.shroomling.idle": "Shroomling squeaks",
+  "entity.smifflemod.birchleopard": "Birch Leopard",
+  "item.smifflemod.birchleopard_spawn_egg": "Birch Leopard Spawn Egg",
+  "subtitles.entity.smifflemod.birchleopard.death": "Birch Leopard whimpers",
+  "subtitles.entity.smifflemod.birchleopard.hurt": "Birch Leopard roars",
+  "subtitles.entity.smifflemod.birchleopard.idle": "Birch Leopard growls",
+  "entity.smifflemod.bonified": "Bonified",
+  "item.smifflemod.bonified_spawn_egg": "Bonified Spawn Egg",
+  "subtitles.entity.smifflemod.bonified.death": "Bonified screeches",
+  "subtitles.entity.smifflemod.bonified.hurt": "Bonified roars aggressively",
+  "subtitles.entity.smifflemod.bonified.idle": "Bonified roars",
 
   "item.smifflemod.bear_meat": "Bear Meat",
   "item.smifflemod.cooked_bear_meat": "Cooked Bear Meat"

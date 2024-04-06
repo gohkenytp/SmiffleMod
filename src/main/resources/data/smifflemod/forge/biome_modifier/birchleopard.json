@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#smifflemod:birchleopard_spawns",
+  "spawners": {
+    "type": "smifflemod:birchleopard",
+    "maxCount": 1,
+    "minCount": 1,
+    "weight": 6
+  }
+}

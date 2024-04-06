@@ -7,24 +7,21 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import smifflepuss.smifflemod.client.ClientRegistrar;
-import smifflepuss.smifflemod.config.SmiffleModConfig;
 import smifflepuss.smifflemod.event.ServerEvents;
 import smifflepuss.smifflemod.registry.SmiffleModBlocks;
 import smifflepuss.smifflemod.registry.SmiffleModEntities;
 import smifflepuss.smifflemod.registry.SmiffleModItems;
 import smifflepuss.smifflemod.registry.SmiffleModSoundEvents;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(SmiffleMod.MODID)
 public class SmiffleMod
 {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "smifflemod";
     public static final Logger LOGGER = LogManager.getLogger();
 
@@ -34,9 +31,6 @@ public class SmiffleMod
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
 
         modBus.addListener(this::setup);
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, SmiffleModConfig.CLIENT);
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, SmiffleModConfig.COMMON);
 
         SmiffleModBlocks.BLOCKS.register(modBus);
         SmiffleModEntities.ENTITIES.register(modBus);

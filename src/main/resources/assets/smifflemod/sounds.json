@@ -17,5 +17,45 @@
 			"smifflemod:entity/shroomling/idle"
 		],
 		"subtitle": "subtitles.entity.smifflemod.shroomling.idle"
+	},
+	"entity.birchleopard.death": {
+		"sounds": [
+			"smifflemod:entity/birchleopard/death"
+		],
+		"subtitle": "subtitles.entity.smifflemod.birchleopard.death"
+	},
+	"entity.birchleopard.hurt": {
+		"sounds": [
+			"smifflemod:entity/birchleopard/hurt1",
+			"smifflemod:entity/birchleopard/hurt2"
+		],
+		"subtitle": "subtitles.entity.smifflemod.birchleopard.hurt"
+	},
+	"entity.birchleopard.idle": {
+		"sounds": [
+			"smifflemod:entity/birchleopard/idle1",
+			"smifflemod:entity/birchleopard/idle2"
+		],
+		"subtitle": "subtitles.entity.smifflemod.birchleopard.idle"
+	},
+	"entity.bonified.death": {
+		"sounds": [
+			"smifflemod:entity/bonified/death"
+		],
+		"subtitle": "subtitles.entity.smifflemod.bonified.death"
+	},
+	"entity.bonified.hurt": {
+		"sounds": [
+			"smifflemod:entity/bonified/hurt1",
+			"smifflemod:entity/bonified/hurt2"
+		],
+		"subtitle": "subtitles.entity.smifflemod.bonified.hurt"
+	},
+	"entity.bonified.idle": {
+		"sounds": [
+			"smifflemod:entity/bonified/idle1",
+			"smifflemod:entity/bonified/idle2"
+		],
+		"subtitle": "subtitles.entity.smifflemod.bonified.idle"
 	}
 }

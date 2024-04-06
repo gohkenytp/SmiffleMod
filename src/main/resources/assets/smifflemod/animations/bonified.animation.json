@@ -1,0 +1,76 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bonified.walk": {
+			"loop": true,
+			"animation_length": 2.75,
+			"bones": {
+				"leg1": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0.67, 2, -1.67]
+						},
+						"0.75": {
+							"vector": [1, 0, -4]
+						},
+						"1.25": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"leg3": {
+					"position": {
+						"1.25": {
+							"vector": [0, 0, 0]
+						},
+						"1.75": {
+							"vector": [0.67, 2, -1.67]
+						},
+						"2.0": {
+							"vector": [1, 0, -4]
+						},
+						"2.75": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"leg2": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5": {
+							"vector": [0.67, 2, -1.67]
+						},
+						"0.75": {
+							"vector": [1, 0, -4]
+						},
+						"1.25": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"leg4": {
+					"position": {
+						"1.25": {
+							"vector": [0, 0, 0]
+						},
+						"1.75": {
+							"vector": [0.67, 2, -1.67]
+						},
+						"2.0": {
+							"vector": [1, 0, -4]
+						},
+						"2.75": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}
