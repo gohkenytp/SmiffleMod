@@ -9,6 +9,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import smifflepuss.smifflemod.SmiffleMod;
 import smifflepuss.smifflemod.client.render.BirchLeopardRenderer;
 import smifflepuss.smifflemod.client.render.BonifiedRenderer;
+import smifflepuss.smifflemod.client.render.SeahorseRenderer;
 import smifflepuss.smifflemod.client.render.ShroomlingRenderer;
 import smifflepuss.smifflemod.registry.SmiffleModEntities;
 
@@ -20,6 +21,7 @@ public class ClientRegistrar {
         event.registerEntityRenderer(SmiffleModEntities.SHROOMLING.get(), ShroomlingRenderer::new);
         event.registerEntityRenderer(SmiffleModEntities.BIRCH_LEOPARD.get(), BirchLeopardRenderer::new);
         event.registerEntityRenderer(SmiffleModEntities.BONIFIED.get(), BonifiedRenderer::new);
+        event.registerEntityRenderer(SmiffleModEntities.SEAHORSE.get(), SeahorseRenderer::new);
     }
 
     public static void setup(FMLCommonSetupEvent event) {
