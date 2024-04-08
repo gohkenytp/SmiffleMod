@@ -1,0 +1,35 @@
+{
+  "block.smifflemod.bluebell": "Blåklokke",
+  "block.smifflemod.potted_bluebell": "Blåklokke i potte",
+
+  "block.smifflemod.smooth_glowstone": "Glat glødesten",
+  "block.smifflemod.glowstone_bricks": "Glødesten mursten",
+
+  "entity.smifflemod.shroomling": "Svampekammerat",
+  "item.smifflemod.shroomling_spawn_egg": "Svampekammerat Gydeæg",
+  "subtitles.entity.smifflemod.shroomling.death": "Svampekammerat dør",
+  "subtitles.entity.smifflemod.shroomling.hurt": "Svampekammerat har ondt",
+  "subtitles.entity.smifflemod.shroomling.idle": "Svampekammerat knirker",
+
+  "entity.smifflemod.birchleopard": "Birkeleopard",
+  "item.smifflemod.birchleopard_spawn_egg": "Birkeleopard Gydeæg",
+  "subtitles.entity.smifflemod.birchleopard.death": "Birkeleopard klynker",
+  "subtitles.entity.smifflemod.birchleopard.hurt": "Birkeleopard brøler",
+  "subtitles.entity.smifflemod.birchleopard.idle": "Birkeleopard knurrer",
+
+  "entity.smifflemod.bonified": "Knogledæmon",
+  "item.smifflemod.bonified_spawn_egg": "Knogledæmon Gydeæg",
+  "subtitles.entity.smifflemod.bonified.death": "Knogledæmonen skriger",
+  "subtitles.entity.smifflemod.bonified.hurt": "Knogledæmonen brøler aggressivt",
+  "subtitles.entity.smifflemod.bonified.idle": "Knogledæmonen brøler",
+  "entity.smifflemod.bonified_fur": "Knogledæmon Pels",
+
+  "entity.smifflemod.seahorse": "Søhest",
+  "item.smifflemod.seahorse_spawn_egg": "Søhest Gydeæg",
+  "item.smifflemod.seahorse_item": "Søhest",
+  "item.smifflemod.cooked_seahorse": "Kogt søhest",
+  "item.smifflemod.seahorse_bucket": "Spand med søhest",
+
+  "item.smifflemod.bear_meat": "Bjørnekød",
+  "item.smifflemod.cooked_bear_meat": "Kogt Bjørnekød"
+}

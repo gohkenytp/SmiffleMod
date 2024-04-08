@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "smifflemod:seahorse_item"
+  },
+  "result": "smifflemod:cooked_seahorse",
+  "experience": 0.20,
+  "cookingtime": 200
+}

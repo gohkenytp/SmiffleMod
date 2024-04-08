@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "bonified_fur1",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "smifflemod:bonified_fur"
+    },
+    "1": {
+      "item": "smifflemod:bonified_fur"
+    },
+    "2": {
+      "item": "smifflemod:bonified_fur"
+    },
+    "3": {
+      "item": "smifflemod:bonified_fur"
+    }
+  },
+  "result": {
+    "item": "smifflemod:leather",
+    "count": 4
+  }
+}

@@ -2,21 +2,33 @@
   "block.smifflemod.bluebell": "Bluebell",
   "block.smifflemod.potted_bluebell": "Potted Bluebell",
 
+  "block.smifflemod.smooth_glowstone": "Smooth Glowstone",
+  "block.smifflemod.glowstone_bricks": "Glowstone Bricks",
+
   "entity.smifflemod.shroomling": "Shroomling",
   "item.smifflemod.shroomling_spawn_egg": "Shroomling Spawn Egg",
   "subtitles.entity.smifflemod.shroomling.death": "Shroomling dies",
   "subtitles.entity.smifflemod.shroomling.hurt": "Shroomling hurts",
   "subtitles.entity.smifflemod.shroomling.idle": "Shroomling squeaks",
+
   "entity.smifflemod.birchleopard": "Birch Leopard",
   "item.smifflemod.birchleopard_spawn_egg": "Birch Leopard Spawn Egg",
   "subtitles.entity.smifflemod.birchleopard.death": "Birch Leopard whimpers",
   "subtitles.entity.smifflemod.birchleopard.hurt": "Birch Leopard roars",
   "subtitles.entity.smifflemod.birchleopard.idle": "Birch Leopard growls",
+
   "entity.smifflemod.bonified": "Bonified",
   "item.smifflemod.bonified_spawn_egg": "Bonified Spawn Egg",
   "subtitles.entity.smifflemod.bonified.death": "Bonified screeches",
   "subtitles.entity.smifflemod.bonified.hurt": "Bonified roars aggressively",
   "subtitles.entity.smifflemod.bonified.idle": "Bonified roars",
+  "entity.smifflemod.bonified_fur": "Bonified Fur",
+
+  "entity.smifflemod.seahorse": "Seahorse",
+  "item.smifflemod.seahorse_spawn_egg": "Seahorse Spawn Egg",
+  "item.smifflemod.seahorse_item": "Seahorse",
+  "item.smifflemod.cooked_seahorse": "Cooked Seahorse",
+  "item.smifflemod.seahorse_bucket": "Bucket of Seahorse",
 
   "item.smifflemod.bear_meat": "Bear Meat",
   "item.smifflemod.cooked_bear_meat": "Cooked Bear Meat"

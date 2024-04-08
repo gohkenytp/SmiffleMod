@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "smoothglowstone",
+  "ingredients": [
+    {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    {
+      "item": "smifflemod:smooth_glowstone"
+    }
+  ],
+  "result": {
+    "item": "minecraft:glowstone",
+    "count": 4
+  }
+}

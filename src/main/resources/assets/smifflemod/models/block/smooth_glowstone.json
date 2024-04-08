@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "smifflemod:block/smooth_glowstone",
+    "particle": "smifflemod:block/smooth_glowstone"
+  }
+}

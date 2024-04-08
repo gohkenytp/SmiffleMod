@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "glowstonebricks",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    "1": {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    "2": {
+      "item": "smifflemod:smooth_glowstone"
+    },
+    "3": {
+      "item": "smifflemod:smooth_glowstone"
+    }
+  },
+  "result": {
+    "item": "smifflemod:glowstone_bricks",
+    "count": 4
+  }
+}

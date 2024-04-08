@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#smifflemod:seahorse_spawns",
+  "spawners": {
+    "type": "smifflemod:seahorse",
+    "maxCount": 3,
+    "minCount": 1,
+    "weight": 20
+  }
+}
