@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "smifflemod:soul_item"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "#minecraft:soul_fire_base_blocks"
+    }
+  },
+  "result": {
+    "item": "minecraft:soul_torch",
+    "count": 4
+  }
+}
