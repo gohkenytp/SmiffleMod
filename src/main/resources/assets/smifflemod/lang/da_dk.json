@@ -22,7 +22,7 @@
   "subtitles.entity.smifflemod.bonified.death": "Knogledæmonen skriger",
   "subtitles.entity.smifflemod.bonified.hurt": "Knogledæmonen brøler aggressivt",
   "subtitles.entity.smifflemod.bonified.idle": "Knogledæmonen brøler",
-  "entity.smifflemod.bonified_fur": "Knogledæmon Pels",
+  "item.smifflemod.bonified_fur": "Knogledæmon Pels",
 
   "entity.smifflemod.seahorse": "Søhest",
   "item.smifflemod.seahorse_spawn_egg": "Søhest Gydeæg",
@@ -31,5 +31,10 @@
   "item.smifflemod.seahorse_bucket": "Spand med søhest",
 
   "item.smifflemod.bear_meat": "Bjørnekød",
-  "item.smifflemod.cooked_bear_meat": "Kogt Bjørnekød"
+  "item.smifflemod.cooked_bear_meat": "Kogt Bjørnekød",
+
+  "entity.smifflemod.soul": "Sjæl",
+  "item.smifflemod.soul_spawn_egg": "Sjæl Gydeæg",
+  "item.smifflemod.soul_item": "Fri Sjæl",
+  "item.smifflemod.soul_in_a_bottle": "Sjæl i en flaske"
 }

@@ -22,7 +22,7 @@
   "subtitles.entity.smifflemod.bonified.death": "Bonified screeches",
   "subtitles.entity.smifflemod.bonified.hurt": "Bonified roars aggressively",
   "subtitles.entity.smifflemod.bonified.idle": "Bonified roars",
-  "entity.smifflemod.bonified_fur": "Bonified Fur",
+  "item.smifflemod.bonified_fur": "Bonified Fur",
 
   "entity.smifflemod.seahorse": "Seahorse",
   "item.smifflemod.seahorse_spawn_egg": "Seahorse Spawn Egg",
@@ -31,5 +31,10 @@
   "item.smifflemod.seahorse_bucket": "Bucket of Seahorse",
 
   "item.smifflemod.bear_meat": "Bear Meat",
-  "item.smifflemod.cooked_bear_meat": "Cooked Bear Meat"
+  "item.smifflemod.cooked_bear_meat": "Cooked Bear Meat",
+
+  "entity.smifflemod.soul": "Soul",
+  "item.smifflemod.soul_spawn_egg": "Soul Spawn Egg",
+  "item.smifflemod.soul_item": "Free Soul",
+  "item.smifflemod.soul_in_a_bottle": "Soul In A Bottle"
 }
