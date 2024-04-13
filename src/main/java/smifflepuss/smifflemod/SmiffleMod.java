@@ -19,11 +19,15 @@ import smifflepuss.smifflemod.registry.SmiffleModEntities;
 import smifflepuss.smifflemod.registry.SmiffleModItems;
 import smifflepuss.smifflemod.registry.SmiffleModSoundEvents;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Mod(SmiffleMod.MODID)
 public class SmiffleMod
 {
     public static final String MODID = "smifflemod";
     public static final Logger LOGGER = LogManager.getLogger();
+    public static final List<Runnable> CALLBACKS = new ArrayList<>();
 
     public SmiffleMod() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();

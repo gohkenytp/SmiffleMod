@@ -1,6 +1,7 @@
 package smifflepuss.smifflemod.entity;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.DamageTypeTags;
 import net.minecraft.util.RandomSource;
@@ -12,11 +13,9 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.goal.FloatGoal;
-import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.*;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.animal.Fox;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.npc.AbstractVillager;
@@ -25,6 +24,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.Vec3;
+import org.jetbrains.annotations.NotNull;
+import smifflepuss.smifflemod.registry.SmiffleModEntities;
 import smifflepuss.smifflemod.registry.SmiffleModSoundEvents;
 import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
@@ -52,8 +54,9 @@ public class Bonified extends Monster implements GeoEntity {
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
         this.goalSelector.addGoal(1, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-        this.goalSelector.addGoal(2, new LeapAtTargetGoal(this, (float) 1.1D));
-        this.goalSelector.addGoal(3, new RandomStrollGoal(this, 1.0D, 70));
+        this.goalSelector.addGoal(2, new LeapAtTargetGoal(this, (float) 0.3D));
+        this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.0D, false));
+        this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1.0D, 70));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, Player.class, false));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, AbstractVillager.class, false));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, WitherSkeleton.class, false));
@@ -107,5 +110,27 @@ public class Bonified extends Monster implements GeoEntity {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.instanceCache;
+    }
+
+    @Override
+    public void die(@NotNull DamageSource damageSource) {
+        super.die(damageSource);
+        for (int i = 0; i < 3; i++) {
+            Soul spirit = SmiffleModEntities.SOUL.get().create(level());
+            if (spirit == null) return;
+            spirit.setPos(getX(), getY() + 2, getZ());
+            spirit.addDeltaMovement(new Vec3(0, 0.5, 0));
+            level().addFreshEntity(spirit);
+            spirit.setTarget(this.getTarget());
+        }
+
+        for (int i = 0; i < 10; i++) {
+            this.level().addParticle(ParticleTypes.SOUL,
+                    this.getRandomX(0.5),
+                    this.getRandomY() - 1.25,
+                    this.getRandomZ(0.5),
+                    (this.random.nextDouble() - 0.5) * 0.5, -this.random.nextDouble(),
+                    (this.random.nextDouble() - 0.5) * 0.5);
+        }
     }
 }
